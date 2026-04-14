@@ -13,8 +13,11 @@
     "#utils/*": "./src/utils/*"
   },
   "scripts": {
-    "dev": "node src/server.js",
+    "dev": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev:docker": "sh ./scripts/dev.sh",
+    "prod:docker": "sh ./scripts/prod.sh",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

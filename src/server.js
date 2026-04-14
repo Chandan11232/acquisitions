@@ -1,6 +1,6 @@
 import app from './app.js';
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 console.log('--- DEBUG START ---');
 console.log('Is App Defined?:', !!app);
