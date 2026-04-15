@@ -177,3 +177,82 @@
 {"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisitions-api","userAgent":"HTTPie"}
 {"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisitions-api","userAgent":"HTTPie"}
 {"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:11:51:56 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:11:51:57 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:11:52:08 +0000] \"GET /api/users/2 HTTP/1.1\" 401 63 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:23:55 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Email doesn't exists","service":"acquisitions-api"}
+{"level":"error","message":"Signin error Email doesn't exists","service":"acquisitions-api","stack":"Error: Email doesn't exists\n    at authenticateUser (file:///Users/chandangarg/Desktop/acquisitions/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async signin (file:///Users/chandangarg/Desktop/acquisitions/src/controllers/auth.controller.js:69:18)"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:27:26 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Email doesn't exists","service":"acquisitions-api"}
+{"level":"error","message":"Signin error Email doesn't exists","service":"acquisitions-api","stack":"Error: Email doesn't exists\n    at authenticateUser (file:///Users/chandangarg/Desktop/acquisitions/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async signin (file:///Users/chandangarg/Desktop/acquisitions/src/controllers/auth.controller.js:69:18)"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:27:42 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Email doesn't exists","service":"acquisitions-api"}
+{"level":"error","message":"Signin error Email doesn't exists","service":"acquisitions-api","stack":"Error: Email doesn't exists\n    at authenticateUser (file:///Users/chandangarg/Desktop/acquisitions/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async signin (file:///Users/chandangarg/Desktop/acquisitions/src/controllers/auth.controller.js:69:18)"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:28:02 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User adarsh@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: adarsh@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:28:49 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 108 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:28:57 +0000] \"POST /api/users HTTP/1.1\" 404 149 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:29:01 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:29:13 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated successfully: adarsh@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"User logged in successfully: adarsh@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:29:17 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 107 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: adarsh@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users...","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:29:42 +0000] \"GET /api/users HTTP/1.1\" 200 214 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: adarsh@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user with id 1","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:29:53 +0000] \"GET /api/users/1 HTTP/1.1\" 404 28 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/api/users/5","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:30:26 +0000] \"GET /api/users/5 HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: adarsh@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user with id 5","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:30:31 +0000] \"GET /api/users/5 HTTP/1.1\" 200 200 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: adarsh@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user with id 5","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:30:54 +0000] \"DELETE /api/users/5 HTTP/1.1\" 200 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: adarsh@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user with id 5","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:31:00 +0000] \"GET /api/users/5 HTTP/1.1\" 404 28 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User adarsh@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: adarsh@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:43:05 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 108 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User cgarg@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: cgarg@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:43:34 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 108 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User varun@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: varun@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:43:55 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 105 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User aaditya@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: aaditya@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:44:26 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 109 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:44:41 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:44:58 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated successfully: aaditya@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"User logged in successfully: aaditya@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:45:05 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 108 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:45:20 +0000] \"POST /api/delete/6 HTTP/1.1\" 404 152 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:45:57 +0000] \"DELETE /api/users/6 HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated successfully: aaditya@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"User logged in successfully: aaditya@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:46:13 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 108 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: aaditya@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:46:32 +0000] \"DELETE /api/users/6 HTTP/1.1\" 403 50 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated successfully: cgarg@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"User logged in successfully: cgarg@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:47:02 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 107 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: cgarg@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user with id 6","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:47:29 +0000] \"DELETE /api/users/6 HTTP/1.1\" 200 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: cgarg@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user with id 8","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:47:33 +0000] \"DELETE /api/users/8 HTTP/1.1\" 200 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: cgarg@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user with id 9","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:47:37 +0000] \"DELETE /api/users/9 HTTP/1.1\" 200 39 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: cgarg@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users...","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [15/Apr/2026:12:47:45 +0000] \"GET /api/users HTTP/1.1\" 200 214 \"-\" \"HTTPie\"","service":"acquisitions-api"}
