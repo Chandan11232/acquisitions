@@ -12,7 +12,7 @@ permissions:
 jobs:
   docker-build-and-push:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    environment: production # Add this if your secret is inside an environment
     env:
       IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}
     steps:
