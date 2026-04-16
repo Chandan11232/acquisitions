@@ -31,7 +31,7 @@ export const authenticateUser = async (email, password) => {
       .limit(1);
 
     if (existingUsers.length === 0) {
-      throw new Error("Email doesn't exists");
+      throw new Error('Email does not exists');
     }
 
     const [existingUser] = existingUsers;
