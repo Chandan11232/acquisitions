@@ -35,7 +35,10 @@ export const authenticateUser = async (email, password) => {
     }
 
     const [existingUser] = existingUsers;
-    const isPasswordValid = await comparePassword(password, existingUser.password);
+    const isPasswordValid = await comparePassword(
+      password,
+      existingUser.password
+    );
 
     if (!isPasswordValid) {
       throw new Error('Invalid password');

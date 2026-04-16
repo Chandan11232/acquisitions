@@ -1,4 +1,3 @@
-import { openai } from '@ai-sdk/openai';
 import arcjet, { detectBot, slidingWindow, shield } from '@arcjet/next';
 
 const aj = arcjet({
