@@ -1,7 +1,7 @@
 import logger from '#config/logger.js';
 import { jwttoken } from '#utils/jwt.js';
 
-export const authenticate = (req, res, next) => {
+export const authenticateToken = (req, res, next) => {
   try {
     const token = req.cookies.token;
 

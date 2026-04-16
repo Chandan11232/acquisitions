@@ -26,7 +26,7 @@ export const fetchAllUsers = async (req, res, next) => {
   }
 };
 
-export const getUserById = async (req, res, next) => {
+export const fetchUserById = async (req, res, next) => {
   try {
     if (!req.user) {
       return res.status(401).json({ message: 'Authentication required' });
@@ -57,7 +57,7 @@ export const getUserById = async (req, res, next) => {
   }
 };
 
-export const updateUser = async (req, res, next) => {
+export const updateUserById = async (req, res, next) => {
   try {
     const paramsValidation = userIdSchema.safeParse(req.params);
     if (!paramsValidation.success) {
@@ -114,7 +114,7 @@ export const updateUser = async (req, res, next) => {
   }
 };
 
-export const deleteUser = async (req, res, next) => {
+export const deleteUserById = async (req, res, next) => {
   try {
     const paramsValidation = userIdSchema.safeParse(req.params);
     if (!paramsValidation.success) {

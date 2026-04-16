@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "imports": {
+    "#src/*": "./src/*",
     "#config/*": "./src/config/*",
     "#controllers/*": "./src/controllers/*",
     "#middleware/*": "./src/middleware/*",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "dev": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ARCJET_ENV=development NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest",
     "start": "node src/index.js",
     "dev:docker": "sh ./scripts/dev.sh",
     "prod:docker": "sh ./scripts/prod.sh",
@@ -64,6 +65,8 @@
     "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
-    "prettier": "^3.8.1"
+    "jest": "^30.3.0",
+    "prettier": "^3.8.1",
+    "supertest": "^7.2.2"
   }
 }
